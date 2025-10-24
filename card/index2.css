@@ -1,0 +1,42 @@
+
+body{
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100vh;
+
+}
+.card{
+background-color:rgb(149, 100, 179);
+width: 350px;
+height: 400px;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: all ease-in-out 1s;
+}
+.card:hover{
+background-color: rgb(4, 4, 75);
+}
+.card:active{
+  transform: scale(0.9);
+}
+.input-card{
+    outline:none;
+    height: 30px;
+    width: 300px;
+    font-size:20px;
+font-family: monospace;
+}
+.glav-card{
+  display: flex;
+  gap: 50px;
+}
+.card:focus-within {
+  border: 3px solid rgb(179, 7, 202);
+ 
+}
+.card:nth-child(even){
+background-color: crimson;
+
+}
