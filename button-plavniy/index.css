@@ -1,0 +1,72 @@
+body{
+display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.button-container{
+  display: flex;
+  gap: 40px;
+}
+.btn1{
+  background-color: rgb(116, 13, 13);
+   width: 150px;
+   height: 50px;
+   font-size:20px;
+   border:none;
+    color:white;
+    border-radius: 30px;
+    transition-duration: 1s;
+}
+.btn1:hover{
+background-color: rgb(136, 75, 140);
+ width: 160px;
+  height: 55px;
+  box-shadow: 0 0 10px 2px blue ;
+}
+.btn1:active{
+  width: 130px;
+  transition-timing-function: ease-in-out;
+  }
+
+.btn2{
+  background-color: rgb(13, 13, 116);
+  border:none;
+   width: 150px;
+   height: 50px;
+    font-size:20px;
+     border-radius: 30px;
+    color:white;
+    transition-duration: 1s;
+
+} 
+
+.btn2:hover{
+  background-color: rgb(31, 96, 106);
+  width: 160px;
+  height: 55px;
+  box-shadow: 0 0 10px 2px rgb(111, 9, 102) ;
+
+} 
+.btn2:active{
+  width: 130px;
+  transition-timing-function: ease-in;
+}
+.warik{
+width: 50px;
+height: 50px;
+background-color: rgb(4, 110, 134);
+border-radius: 30px;
+animation: warik ease-in-out 2.8s infinite;
+}
+@keyframes warik{
+  0%, 100%{
+  transform:translateY(0) scale(1);
+  box-shadow: 0 0 20px 2px rgb(17, 46, 52);
+  }
+  50%{
+  transform: translateY(180px) scale(0.5);
+    box-shadow: 0 0 10px 2px rgb(17, 46, 52) ;
+    
+  }
+}
